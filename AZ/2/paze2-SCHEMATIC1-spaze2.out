@@ -1,0 +1,132 @@
+
+**** 05/08/18 14:31:33 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-spaze2"  [ E:\AZ\2\paze2-schematic1-spaze2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "paze2-schematic1-spaze2.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 30 7meg
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\paze2-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING paze2-SCHEMATIC1.net ****
+* source PAZE2
+Q_Q1         N00268 N00179 N02157 BC107A 
+C_C2         N02157 N003990  10u  
+R_R1         N00179 N000430  13.8k  
+C_C3         0 N00179  470u  
+R_R2         0 N00179  2.2k  
+V_V2         N000430 0 10Vdc
+C_C4         0 N01969  116p  
+R_R3         0 N02157  0.1k  
+V_V1         N00654 0 DC 0Vdc AC 1Vac 
+R_R4         N00268 N01833  1k  
+R_R5         0 N01969  1k  
+R_R6         N00654 N003990  0.33k  
+V_V3         N01833 0 10Vdc
+C_C1         N00268 N01969  10u  
+
+**** RESUMING paze2-schematic1-spaze2.sim.cir ****
+.END
+
+**** 05/08/18 14:31:33 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-spaze2"  [ E:\AZ\2\paze2-schematic1-spaze2.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC107A          
+               NPN             
+          IS    7.049000E-15 
+          BF  375.5          
+          NF    1            
+         VAF  116.3          
+         IKF    4.589        
+         ISE    7.049000E-15 
+          NE    1.281        
+          BR    2.611        
+          NR    1            
+         IKR    5.313        
+         ISC  121.700000E-12 
+          NC    1.865        
+          RC    1.464        
+         CJE   11.500000E-12 
+         VJE     .5          
+         MJE     .2717       
+         CJC    5.380000E-12 
+         VJC     .6218       
+         MJC     .329        
+          TF  451.000000E-12 
+         XTF   17.43         
+         VTF   10            
+         ITF    6.194        
+          TR   10.000000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 05/08/18 14:31:33 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-spaze2"  [ E:\AZ\2\paze2-schematic1-spaze2.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00179)    1.3179 (N00268)    3.9530 (N00654)    0.0000 (N01833)   10.0000     
+
+(N01969)    0.0000 (N02157)     .6077 (N000430)   10.0000                       
+
+(N003990)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -6.291E-04
+    V_V1         0.000E+00
+    V_V3        -6.047E-03
+
+    TOTAL POWER DISSIPATION   6.68E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

@@ -1,0 +1,8 @@
+* source PAZE5
+X_U1         N00127 N00242 N00776 N01224 N00198 AD745/AD
+V_V1         N01344 0 DC 0Vdc AC 1Vac 
+R_R1         N01344 N00242  10k  
+R_R2         0 N00127  10k  
+R_R3         N00127 N00198  1990k  
+V_V4         0 N01224 10Vdc
+V_V3         N00776 0 10Vdc

@@ -1,0 +1,9 @@
+* source PAZE8
+X_U1         N00454 N00133 N000032 N000033 N00500 AD741
+V_V1         N000032 0 10Vdc
+V_V3         N001110 0 DC 0Vdc AC 1Vac 
+V_V2         N000033 0 10Vdc
+C_C1         N001110 N00133  16n  
+R_R4         0 N00133  1k  
+R_R5         N00500 N00454  1k  
+R_R6         N00454 0  1k  

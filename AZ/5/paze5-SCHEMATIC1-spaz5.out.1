@@ -1,0 +1,44 @@
+
+**** 05/04/18 14:39:58 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-spaz5"  [ E:\AZ\5\paze5-SCHEMATIC1-spaz5.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "paze5-SCHEMATIC1-spaz5.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 1 0 10000k
+----------$
+ERROR -- Invalid value
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\paze5-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING paze5-SCHEMATIC1.net ****
+* source PAZE5
+X_U1         N00127 N00242 N00776 N01224 N00198 AD745/AD
+V_V1         N01344 0 DC 0Vdc AC 1Vac 
+R_R1         N01344 N00242  10k  
+R_R2         0 N00127  10k  
+R_R3         N00127 N00198  490k  
+V_V4         0 N01224 10Vdc
+V_V3         N00776 0 10Vdc
+
+**** RESUMING paze5-SCHEMATIC1-spaz5.sim.cir ****
+.END
+

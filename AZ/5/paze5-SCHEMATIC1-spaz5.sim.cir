@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-spaz5"  [ E:\AZ\5\paze5-schematic1-spaz5.sim ] 
+
+** Creating circuit file "paze5-schematic1-spaz5.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1 10000k
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\paze5-SCHEMATIC1.net" 
+
+
+.END
